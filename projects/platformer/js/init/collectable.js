@@ -37,9 +37,9 @@
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
         // MY CODE: 
-        createCollectable(type.max, 20, 170, 8, 1); //collectable: far left, gravity 8, bounce 1
-        createCollectable(type.grace, 835, 315);      //collectable: far right underneath right canon
-        createCollectable(type.steve, 300, 100);      //collectable: 
+        createCollectable(type.max, 20, 170, 8, 1); //collectable(max): far left, gravity 8, bounce 1
+        createCollectable(type.grace, 835, 315);      //collectable(grace): far right underneath right canon
+        createCollectable(type.steve, 300, 100);      //collectable(steve): in air close to max
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
