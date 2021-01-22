@@ -36,10 +36,13 @@
          */
         createPlatform(0, game.world.height - 32, 3, 2);    // DO NOT DELETE
 
-        // example:
-        createPlatform(400, 250);
-        createPlatform(170, 460, 0.5);
-        
+        // MY CODE:
+        createPlatform(400, 580, 0.3);  //platform: located at the bottom-middle, 30% width
+        createPlatform(500, 500, 0.5);  //platform: located second to bottom, right-middle, 50% width
+        createPlatform(0, 430, 0.5);    //platform: located all the way to left, touching end of screen, 50% width
+        createPlatform(700, 390);       //platform: located all the way to right, touching end of screen
+        createPlatform(400, 280, 0.5);  //platform: located at top, 50% width
+       
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     }

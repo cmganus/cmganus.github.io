@@ -36,10 +36,10 @@
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        // example: 
-        createCollectable(type.steve, 200, 170, 6, 0.7);
-        
-        
+        // MY CODE: 
+        createCollectable(type.max, 20, 170, 8, 1); //collectable: far left, gravity 8, bounce 1
+        createCollectable(type.grace, 835, 315);      //collectable: far right underneath right canon
+        createCollectable(type.steve, 300, 100);      //collectable: 
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////

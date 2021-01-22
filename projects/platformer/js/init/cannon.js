@@ -26,10 +26,11 @@
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        // example: 
-        createCannon("top", 450);
-        
-        
+        // MY CODE: 
+        createCannon("bottom", 450, 7000); //cannon: located bottom at x=150, 10 second delay
+        createCannon("top", 250, 10000);   //cannon: located top at x=250, 10 second delay
+        createCannon("right", 295, 10000);  //cannon: located right at x=295, 10 second delay
+
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
