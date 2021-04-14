@@ -29,7 +29,7 @@ var level01 = function (window) {
 
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
-        game.setDebugMode(true);
+        game.setDebugMode(false);
 
         // TODO 6 and on go here
         // BEGIN EDITING YOUR CODE HERE
@@ -72,12 +72,12 @@ var level01 = function (window) {
 
         }
 
-        createSawBlade(1000, 320);
-        createSawBlade(3700, 320);
-        createSawBlade(2500, 320);
-        createSpikes(1800,440);
-        createSpikes(3000,440);
-        createSpikes(4500,440);
+        createSawBlade(1000, 520);
+        createSawBlade(3700, 520);
+        createSawBlade(2500, 520);
+        createSpikes(1800,650);
+        createSpikes(3000,650);
+        createSpikes(4500,650);
 
         
         for (var i = 0; i < levelData.gameItems.length; i++) {
