@@ -15,12 +15,12 @@ var level01 = function (window) {
             "name": "Robot Romp",
             "number": 1, 
             "speed": -3,
-            "gameItems": [
+            /*"gameItems": [
                 { "type": "sawblade", "x": 400, "y": groundY },
                 { "type": "sawblade", "x": 600, "y": groundY },
                 { "type": "sawblade", "x": 900, "y": groundY },
                 
-            ]
+            ]*/
         };
 
         // 
@@ -54,9 +54,30 @@ var level01 = function (window) {
 
         }
 
-        createSawBlade(1000, 285);
-        createSawBlade(1800, 285);
-        createSawBlade(2500, 285);
+         function createSpikes(x, y){
+
+            var hitZoneSize = 25;
+            var damageFromObstacle = 10;
+            var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+            
+            sawBladeHitZone.x = x;
+            sawBladeHitZone.y = y;
+            game.addGameItem(sawBladeHitZone);    
+            
+            var obstacleImage = draw.bitmap('img/spikes.png');
+            sawBladeHitZone.addChild(obstacleImage);
+            
+            obstacleImage.x = -25;
+            obstacleImage.y = -25;
+
+        }
+
+        createSawBlade(1000, 320);
+        createSawBlade(3700, 320);
+        createSawBlade(2500, 320);
+        createSpikes(1800,440);
+        createSpikes(3000,440);
+        createSpikes(4500,440);
 
         
         for (var i = 0; i < levelData.gameItems.length; i++) {
@@ -75,22 +96,7 @@ var level01 = function (window) {
             
             */
 
-        function createSpikes(x,y) {
-            var hitZoneSize = 25;
-            var damageFromObstacle = 10;
-            var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
-            
-            sawBladeHitZone.x = x;
-            sawBladeHitZone.y = y;
-            game.addGameItem(sawBladeHitZone);    
-            
-            var obstacleImage = draw.bitmap('img/spikes.png');
-            sawBladeHitZone.addChild(obstacleImage);
-            
-            obstacleImage.x = -25;
-            obstacleImage.y = -25;
-        };
-       
+    
 
         // DO NOT EDIT CODE BELOW HERE  video stopped at 49 minutes. TODO 7 ^^ //
     }
