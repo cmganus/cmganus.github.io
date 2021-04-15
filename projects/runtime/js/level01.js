@@ -75,9 +75,16 @@ var level01 = function (window) {
         createSawBlade(1000, groundY - 120);
         createSawBlade(3700, groundY - 120);
         createSawBlade(2500, groundY - 120);
+        createSawBlade(4100, groundY - 120);
+        createSawBlade(5500, groundY - 120);
+        createSawBlade(6500, groundY - 120);
+
         createSpikes(1800, groundY - 0);
         createSpikes(3000,groundY - 0);
         createSpikes(4500,groundY - 0);
+        createSpikes(5100, groundY - 0);
+        createSpikes(6000,groundY - 0);
+        createSpikes(6800,groundY - 0);
 
         
         for (var i = 0; i < levelData.gameItems.length; i++) {
